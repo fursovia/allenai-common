@@ -2,7 +2,11 @@
 name = "allenai-common"
 version = "1.1.0"
 description = "Params, FromParams, Registrable, Lazy classes from AllenNLP"
-authors = ["fursovia <fursov.ia@gmail.com>"]
+authors = ["Ivan Fursov <fursovia@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/fursovia/allenai-common"
+repository = "https://github.com/fursovia/allenai-common"
 
 [tool.poetry.dependencies]
 python = "^3.6"
