@@ -30,7 +30,7 @@ from allenai_common.tqdm import Tqdm
 
 logger = logging.getLogger(__name__)
 
-CACHE_ROOT = Path(os.getenv("ALLENNLP_CACHE_ROOT", Path.home() / ".allennlp"))
+CACHE_ROOT = Path(os.getenv("ALLENAI_CACHE_ROOT", Path.home() / ".allenai_common"))
 CACHE_DIRECTORY = str(CACHE_ROOT / "cache")
 DEPRECATED_CACHE_DIRECTORY = str(CACHE_ROOT / "datasets")
 
@@ -156,7 +156,7 @@ def cached_path(
 
         if extract_archive and (is_zipfile(file_path) or tarfile.is_tarfile(file_path)):
             # This is the path the file should be extracted to.
-            # For example ~/.allennlp/cache/234234.21341 -> ~/.allennlp/cache/234234.21341-extracted
+            # For example ~/.allenai_common/cache/234234.21341 -> ~/.allenai_common/cache/234234.21341-extracted
             extraction_path = file_path + "-extracted"
 
     elif os.path.exists(url_or_filename):

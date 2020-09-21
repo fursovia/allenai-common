@@ -1,5 +1,5 @@
 """
-`allennlp.common.tqdm.Tqdm` wraps tqdm so we can add configurable
+`allenai_common.tqdm.Tqdm` wraps tqdm so we can add configurable
 global defaults for certain tqdm parameters.
 """
 import logging

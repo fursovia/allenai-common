@@ -193,7 +193,7 @@ def _is_dict_free(obj: Any) -> bool:
 class Params(MutableMapping):
     """
     Represents a parameter dictionary with a history, and contains other functionality around
-    parameter passing and validation for AllenNLP.
+    parameter passing and validation.
 
     There are currently two benefits of a `Params` object over a plain dictionary for parameter
     passing:
@@ -206,7 +206,7 @@ class Params(MutableMapping):
        those may not specify what default values were used, whereas this will log them.
 
     !!! Consumption
-        The convention for using a `Params` object in AllenNLP is that you will consume the parameters
+        The convention for using a `Params` object is that you will consume the parameters
         as you read them, so that there are none left when you've read everything you expect.  This
         lets us easily validate that you didn't pass in any `extra` parameters, just by making sure
         that the parameter dictionary is empty.  You should do this when you're done handling
@@ -479,7 +479,7 @@ class Params(MutableMapping):
             for later substitution. Typically we substitute these using environment
             variables; however, you can also specify them here, in which case they
             take priority over environment variables.
-            e.g. {"HOME_DIR": "/Users/allennlp/home"}
+            e.g. {"HOME_DIR": "/Users/username/home"}
         """
         if ext_vars is None:
             ext_vars = {}

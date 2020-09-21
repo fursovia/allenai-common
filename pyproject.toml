@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "allenai-common"
-version = "1.1.0"
+version = "1.1.1"
 description = "Params, FromParams, Registrable, Lazy classes from AllenNLP"
 authors = ["Ivan Fursov <fursovia@gmail.com>"]
 license = "Apache-2.0"
